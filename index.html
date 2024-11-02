@@ -7,23 +7,23 @@
 </head>
 <body>
     <form onsubmit="handleSubmit(event)">
-        <label for="nama"> Nama <input type="text" name="tanya" id="nama" required></label>
-        <button type="submit" id="masuk" disabled style="color: grey">Masuk</button>
+        <label for="name"><input type="text" name="yourname" id="name" required placeholder="Your Name"></label>
+        <button type="submit" id="enter" disabled style="color: grey">Let's see Your Role!!</button>
     </form>
 
     <script>
-        const inputNama = document.getElementById("nama");
-        const masuk = document.getElementById("masuk");
+        const inputName = document.getElementById("name");
+        const enter = document.getElementById("enter");
 
         inputNama.addEventListener("input", () => {
-            const nama = inputNama.value.trim();
-            masuk.disabled = nama === "";
+            const name = inputName.value.trim();
+            enter.disabled = name === "";
         });
 
         function handleSubmit(event) {
             event.preventDefault();
-            const nama = inputNama.value.trim();
-            localStorage.setItem("nama", nama);
+            const name = inputNama.value.trim();
+            localStorage.setItem("name", name);
             window.location.href = "role.html";
         }
 
