@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!!</title>
+</head>
+<body>
+    <form onsubmit="handleSubmit(event)">
+        <label for="nama"> Nama <input type="text" name="tanya" id="nama" required></label>
+        <button type="submit" id="masuk" disabled style="color: grey">Masuk</button>
+    </form>
+
+    <script>
+        const inputNama = document.getElementById("nama");
+        const masuk = document.getElementById("masuk");
+
+        inputNama.addEventListener("input", () => {
+            const nama = inputNama.value.trim();
+            masuk.disabled = nama === "";
+        });
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const nama = inputNama.value.trim();
+            localStorage.setItem("nama", nama);
+            window.location.href = "role.html";
+        }
+
+    </script>
+    <script src="./script/role.js"></script>
+</body>
+</html>

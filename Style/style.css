@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.Player, .Komputer{
+    border: 2px solid black;
+}
+
+.card h1{
+    text-align: left;
+    margin: 10px;
+}
+
