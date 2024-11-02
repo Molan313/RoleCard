@@ -18,17 +18,16 @@ document.querySelector("#resetKomputer").addEventListener("click", () => {
 function tampilkanPlayer(){
     document.querySelector("#namaPlayer").innerHTML = `Name: ${namaku}`;
     document.querySelector("#rolePlayer").innerHTML = `Role   : ${player.role}`;
-    document.querySelector("#propertiPlayer").innerHTML = `Property \t: ${player.properties}`;
+    document.querySelector("#propertiPlayer").innerHTML = `Property \t: ${player.property}`;
     document.querySelector("#levelPlayer").innerHTML = `Level \t: ${player.level}`;
 
 }
 
 function tampilkanKomputer(){
-    document.querySelector("#namaPlayer").innerHTML = `Name: Computer`;
+    document.querySelector("#namaKomputer").innerHTML = `Name: Computer`;
     document.querySelector("#roleKomputer").innerHTML = `Role   : ${komputer.role}`;
-    document.querySelector("#propertiKomputer").innerHTML = `Property \t: ${komputer.properties}`;
+    document.querySelector("#propertiKomputer").innerHTML = `Property \t: ${komputer.property}`;
     document.querySelector("#levelKomputer").innerHTML = `Level \t: ${komputer.level}`;
-    
 }
 
 function random(){

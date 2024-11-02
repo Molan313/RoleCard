@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/style.css">
     <title>Welcome!!</title>
 </head>
 <body>
-    <form onsubmit="handleSubmit(event)">
-        <label for="nama"><input type="text" name="tanya" id="nama" required placeholder="Your Name"></label>
-        <button type="submit" id="masuk" disabled style="color: grey">Let's see your Role!!</button>
-    </form>
+    <section id="home">
+        <div class="container">
+            <h1>WELCOME TO THE GAME</h1>
+            <form onsubmit="handleSubmit(event)">
+                <fieldset>
+                    <label for="nama"><input type="text" name="tanya" id="nama" required placeholder="Your Name"></label>
+                    <button type="submit" id="masuk" disabled style="color: grey">Let's see your Role!!</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
 
     <script>
         const inputNama = document.getElementById("nama");
