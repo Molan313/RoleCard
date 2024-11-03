@@ -90,7 +90,7 @@ function unlockKomputer(){
 }
 
 function tampilkanPlayer(){
-    document.querySelector("#imagePlayer").setAttribute("src", `./media/${player.role}.png`);
+    document.querySelector("#imagePlayer").setAttribute("src", `./Image/${player.role}.png`);
     document.querySelector("#namaPlayer").innerHTML = `Name: ${namaku}`;
     document.querySelector("#rolePlayer").innerHTML = `Role   : ${player.role}`;
     document.querySelector("#propertiPlayer").innerHTML = `Property \t: ${player.property} (${unlockPlayer().unlock})`;
@@ -103,7 +103,7 @@ function tampilkanPlayer(){
 }
 
 function tampilkanKomputer(){
-    document.querySelector("#imageKomputer").setAttribute("src", `./media/${komputer.role}.png`);
+    document.querySelector("#imageKomputer").setAttribute("src", `./Image/${komputer.role}.png`);
     document.querySelector("#namaKomputer").innerHTML = `Name: Computer`;
     document.querySelector("#roleKomputer").innerHTML = `Role   : ${komputer.role}`;
     document.querySelector("#propertiKomputer").innerHTML = `Property \t: ${komputer.property} (${unlockKomputer().unlock})`;
