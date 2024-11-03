@@ -1,0 +1,1 @@
+This website will produce cards with each role, level and property appearing randomly. Power is generated from the level value which will be multiplied by the property. Properties have conditions, each property must meet the level conditions, if the level conditions have not been met, then the property value will not be multiplied by the level. And power only comes from level.
