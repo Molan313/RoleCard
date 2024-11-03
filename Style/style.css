@@ -21,6 +21,7 @@ h1,h2{
     color: white;
     text-align: center;
 }
+
 .card{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -51,3 +52,30 @@ h1,h2{
     padding: 2px;
 }
 
+@media (max-width: 768px) {
+    .card{
+        grid-template-columns: 1fr;
+    }
+
+    #imagePlayer, #imageKomputer{
+        width: 180px;
+    }
+
+    .Player h1, .Komputer h1{
+        font-size: 10px;
+    }
+
+    .Player, .Komputer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: gainsboro;
+        border: 2px solid black;
+        width: 60vw;
+        margin: auto;
+        height: 45vh;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+}

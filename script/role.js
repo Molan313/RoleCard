@@ -21,7 +21,7 @@ document.querySelector("#resetKomputer").addEventListener("click", () => {
 
 function updateHasil(){
     const hasilGame = hasil();
-    document.querySelector("#hasil").innerHTML = `Anda ${hasilGame.final}, nilai anda ${hasilGame.hasilPlayer} dan nilai Komputer ${hasilGame.hasilKomputer}`
+    document.querySelector("#hasil").innerHTML = `Anda ${hasilGame.final}, power Anda ${hasilGame.hasilPlayer} dan power Komputer ${hasilGame.hasilKomputer}`
 }
 
 function hasil(){
